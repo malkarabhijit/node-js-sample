@@ -6,6 +6,10 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   response.send('Hello World!')
+});
+
+app.get('/test', function(request, response) {
+    response.send('Hello World Test!')
 })
 
 app.listen(app.get('port'), function() {
